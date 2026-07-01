@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:palevioletred;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+
+    .form-container{
+        background:peachpuff;
+        padding:30px;
+        width:350px;
+        border-radius:15px;
+        box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        text-align:center;
+        color:#2193b0;
+        margin-bottom:20px;
+    }
+
+    label{
+        display:block;
+        margin-top:10px;
+        color:#333;
+        font-weight:bold;
+    }
+
+    input, select{
+        width:100%;
+        padding:10px;
+        margin-top:5px;
+        border:1px solid #ccc;
+        border-radius:8px;
+        outline:none;
+    }
+
+    input:focus, select:focus{
+        border-color:#2193b0;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+        margin-top:20px;
+        border:none;
+        border-radius:8px;
+        background:#2193b0;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#176b87;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Admission Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>B.tech</option>
+            <option>B.Sc</option>
+            <option>B.E</option>
+            <option>BA</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
